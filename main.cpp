@@ -3,20 +3,6 @@
 
 
 using namespace std;
-// File name: CS112_A2_T4_section(23,24)_ 20230475 _20230650_20230121.cpp
-// Hussam Muhammed Ahmed Abdelaziz
-// email: saulgoodman2005@gmail.com
-// ID: 20230121
-// Ahmed Mahmoud Ibrahim Mahmoud
-// Email: ahmedmahmoudpes41@gmail.com
-// ID: 20230650
-// Youssef abo el yousr
-// Email:
-// ID: 20230475
-// Section: 23,24
-
-
-//hossam
 string ch2[100];
 
 void clearMatrix(
@@ -145,8 +131,7 @@ void routeCipher(int choice, string inputD) {//func that takes inputs and runs t
 
 
 //-------------------------------------------------------------------------------------------------------------------
-//Ahmed Mahmoud Ibrahim Mahmoud
-//Id:20230650
+
 string encryptAffine(const string &text, int a, int b) {
     string encrypted = "";
     for (char q: text) {
@@ -163,7 +148,6 @@ string encryptAffine(const string &text, int a, int b) {
     return encrypted;
 }
 
-//this function for decipher the massage
 string decryptAffine(const string &text, int b, int c) {
     string decrypted = "";
     for (char q: text) {
@@ -203,7 +187,7 @@ void affineCipher(int choice, string word) {
 }
 
 //---------------------------------------------------------------------------------------------------------
-//Youssef Abo El-Yosr
+
 string encodeSS(string input, string key) {
     map<char, int> map1; // mapping the alphabet to the encrypted text
     map<char, int> map2; // counts the number of character occurences in the key so we dont use those letters later
@@ -259,7 +243,6 @@ void SSCipher(int choice, string input) {
 }
 
 //-----------------------------------------------------------------------------------------------
-//Youssef Abo El-Yosr
 
 //in atbash both encryption and decryption are the same
 void atbashEncrypt(string input) {              //this is the normal version
@@ -308,7 +291,6 @@ void atbash(int choice, string input) {                     //separate func to c
 
 //--------------------------------------------------------------------------------------------
 
-//hossam
 
 void baconianEncrypt(string input, map<char, string> mapE) {        //printing ans
     cout << "Encrypted message is : ";
@@ -358,7 +340,6 @@ void baconianCipher(int choice, string input) {
 }
 //------------------------------------------------------------------------------------------------------------
 
-//hossam
 
 void railEncrypt(string input, int key, string mat[240]) { //encryption
     int column = 0; //counts chars of input which equals the column which that char will be
@@ -460,7 +441,6 @@ void railFenceCipher(int choice, string input) {
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//ahmed
 string vingereEncrypt(string word, string key) {
     string result;
     string extended_key = key;
@@ -490,7 +470,6 @@ void vignereCipher(string input) {
 }
 
 //--------------------------------------------------------------------------------------------------------------
-//Ahmed
 void morseEncrypt(string input) {
     //mapping of each value to its corresponding value
     for (int i = 0; i < input.size(); ++i) {
@@ -590,7 +569,6 @@ void morse(string input, int choice) {
     }
 }
 //----------------------------------------------------------------------------------------------------------------------------------------
-//hossam
 
 void encPolybius(string input, string key) {
     string matrix[6];
@@ -683,7 +661,6 @@ void polypius(string input, int choice) {
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-//hossam
 //2 functions to help with Xor
 string int_to_hex(int i) {
     ostringstream ss;
